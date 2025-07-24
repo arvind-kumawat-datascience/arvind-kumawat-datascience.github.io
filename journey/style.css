@@ -208,6 +208,9 @@ h1 {
     color: #265d27;
     font-size: 1.6rem;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 0;
     margin-bottom: 0;
     margin-top: 0;
@@ -705,6 +708,7 @@ h1 {
 
 .step-photos {
     margin-top: 8px;
+    max-width: 200px;
 }
 
 .photos-label {
@@ -2068,5 +2072,22 @@ h1 {
         padding-top: 1rem;
         margin-bottom: 14px;
         border-radius: 12px;
+    }
+
+   
+
+    .farmer-img-container{
+        display: flex;
+        align-items: center;
+    }
+    
+    .farmer-img{
+        max-width: 40vw;
+        display: flex;
+        align-items: center;
+        margin-left: 30%;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        
     }
 } 
