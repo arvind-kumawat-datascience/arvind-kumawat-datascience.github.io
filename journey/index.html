@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Millets & Oats Breakfast Cookies</title>
+
+  <!-- Open Graph Meta Tags for Facebook Sharing -->
+  <meta property="og:title" content="Foxtail Millet - Complete Farm to Table Traceability" />
+  <meta property="og:description"
+    content="Discover the complete journey of your foxtail millet from seed to fork! Meet your farmer, track crop journey, and see real-time transparency." />
+  <meta property="og:image"
+    content="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/20250625_105751.jpg?v=1750830150&width=1200" />
+  <meta property="og:url" content="https://purfermeproject.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Purferme Project" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Foxtail Millet - Complete Farm to Table Traceability" />
+  <meta name="twitter:description"
+    content="Discover the complete journey of your foxtail millet from seed to fork! Meet your farmer, track crop journey, and see real-time transparency." />
+  <meta name="twitter:image"
+    content="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/20250625_105751.jpg?v=1750830150&width=1200" />
+
+  <link rel="icon" type="image/x-icon"
+    href="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/favicon.ico?v=1753337870" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div class="hero-section">
+    <header id="sticky-header">
+      <div class="badge">
+        <span>Seed to Fork Traceability</span>
+      </div>
+    </header>
+    <main>
+      <div class="video-container">
+        <video src="https://cdn.shopify.com/videos/c/o/v/09d9624ffa834b6fbb9f9a3ff095dc88.mp4" controls autoplay muted
+          loop playsinline class="hero-video">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="action-buttons">
+        <button class="action-btn know-more-btn" onclick="scrollToFarmer()">
+          <span class="btn-icon">&#128100;</span>
+          <span class="btn-text">Know More</span>
+        </button>
+        <button class="action-btn share-btn" onclick="showShareOptions()">
+          <span class="btn-icon">&#128156;</span>
+          <span class="btn-text">Share</span>
+        </button>
+      </div>
+      <div id="shareModal" class="share-modal">
+        <div class="share-modal-content">
+          <div class="share-modal-header">
+            <h3>Share This Product</h3>
+            <button class="close-modal" onclick="hideShareOptions()">&times;</button>
+          </div>
+          <div class="share-preview" style="margin-bottom: 16px; text-align: center;">
+            <video src="https://cdn.shopify.com/videos/c/o/v/09d9624ffa834b6fbb9f9a3ff095dc88.mp4" controls
+              style="max-width: 100%; max-height: 200px; border-radius: 8px;"></video>
+          </div>
+          <textarea id="shareContent"
+            style="width: 100%; min-height: 80px; margin-bottom: 16px; border-radius: 6px; border: 1px solid #ccc; padding: 8px; font-size: 1rem;">Just discovered this amazing foxtail millet product! 🌾
+
+I can actually see the complete journey of my food from farm to table! It's incredible - I can:
+• Meet the actual farmer who grew my food
+• See real photos of the crop growing process
+• Check where all the ingredients come from
+• Track the shipment in real-time
+• Know exactly what I'm eating
+
+This is how food transparency should be! No more wondering where my food comes from.
+
+Check it out: https://purfermeproject.com
+
+#Thankyourfarmer #purfermeproject #FoodTransparency #KnowYourFood</textarea>
+          <div class="share-options">
+            <button class="share-option" onclick="shareToFacebook()">
+              <span class="share-icon">&#128187;</span>
+              <span>Facebook</span>
+            </button>
+            <button class="share-option" onclick="shareToWhatsApp()">
+              <span class="share-icon">📱</span>
+              <span>WhatsApp</span>
+            </button>
+            <button class="share-option" onclick="shareToFacebookStory()">
+              <span class="share-icon">📖</span>
+              <span>Facebook Story</span>
+            </button>
+            <button class="share-option" onclick="shareToInstagramStory()">
+              <span class="share-icon">📷</span>
+              <span>Instagram Story</span>
+            </button>
+            <button class="share-option" onclick="shareToWhatsAppStory()">
+              <span class="share-icon">📱</span>
+              <span>WhatsApp Story</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Removed Cookies and HealthBars, banner image, subtitle, and info-cards section as requested -->
+      <!-- The next section starts here: -->
+  </div>
+  <div class="collapsible-section">
+    <button class="collapsible-header" aria-expanded="false" aria-controls="farmer-content">
+      <span class="header-text">Meet Your Farmer</span>
+      <span class="chevron">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </span>
+    </button>
+    <div class="collapsible-content">
+      <section class="farmer-section">
+
+        <div class="farmer-content">
+          <div class="farmer-details">
+            <h2>S. Ramana</h2>
+            <div class="farmer-id-badge"></div>
+            <div class="farmer-info-grid">
+
+              <div class="info-item">
+                <div class="info-label">
+                  <span class="icon">&#128205;</span>
+                  <span>Location</span>
+                </div>
+                <div class="info-value">
+                  Srikakulam, Andhra Pradesh (AP) - 532005
+                </div>
+              </div>
+
+
+
+              <div class="info-item">
+                <div class="info-label">
+                  <span class="icon">&#128197;</span>
+                  <span>Joined Program</span>
+                </div>
+                <div class="info-value">2025-01-22</div>
+              </div>
+
+            </div>
+          </div>
+          <div class="farmer-about">
+            <h3>About This Partnership</h3>
+            <p>
+              S. Ramana is a dedicated farmer who has been part of our
+              sustainable agriculture program since 2025-01-22. Based in
+              Srikakulam, they employ eco-friendly farming practices to ensure
+              the highest quality produce while maintaining environmental
+              sustainability.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="collapsible-section">
+    <button class="collapsible-header" aria-expanded="false" aria-controls="farm-content">
+      <span class="header-text">Farm Details</span>
+      <span class="chevron">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </span>
+    </button>
+    <div class="collapsible-content">
+      <section class="farm-section">
+
+        <div class="farm-content">
+          <div class="farm-info">
+            <h2>Farm Information</h2>
+
+            <div class="row">
+              <span class="label">Farm ID</span>
+              <span class="value">AP532005SR</span>
+              <span class="label">Acreage</span>
+              <span class="value">1 Acre</span>
+            </div>
+            <h3>Soil Analysis</h3>
+            <div class="npk-card">
+              <div style="display: flex; align-items: center; gap: 16px">
+                <span style="font-size: 1.2rem; font-weight: 600">NPK Ratio</span>
+                <span class="npk-badge">8:6:3</span>
+              </div>
+              <div class="npk-desc">
+                Optimal nitrogen, phosphorus, and potassium levels for healthy
+                crop growth
+              </div>
+            </div>
+            <h3 class="tech">Farming Technology</h3>
+            <div>Broadcasting</div>
+          </div>
+          <div class="farm-docs">
+            <h3>Farm Documentation</h3>
+            <div class="doc-links">
+              <div class="doc-link" id="google-maps-link">
+                <span><span class="icon">&#128205;</span> View on Google
+                  Maps</span>
+                <span class="external">&#8599;</span>
+              </div>
+              <div class="doc-link" id="soil-test-link">
+                <span><span class="icon">&#128196;</span> Soil Test Report</span>
+                <span class="external">&#8599;</span>
+              </div>
+              <div class="doc-link" id="land-doc-link">
+                <span><span class="icon">&#128196;</span> Land
+                  Documentation</span>
+                <span class="external">&#8599;</span>
+              </div>
+            </div>
+            <div class="sustainable-card">
+              <h4>Sustainable Practices</h4>
+              <ul>
+                <li>Organic soil preparation methods</li>
+                <li>Balanced NPK nutrient management</li>
+                <li>Modern sowing technology</li>
+                <li>Regular soil health monitoring</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="collapsible-section">
+    <button class="collapsible-header" aria-expanded="false" aria-controls="seed-content">
+      <span class="header-text">Seed Information</span>
+      <span class="chevron">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </span>
+    </button>
+    <div class="collapsible-content">
+      <section class="seed-section">
+
+        <div class="seed-carousel-container">
+          <div class="seed-track">
+            <!-- Slide 1 -->
+            <div class="seed-slide">
+              <div class="slide-header">
+                <img src="./images/image.png" alt="Foxtail Millets SiA 3088" class="seed-img" />
+                <div class="header-info">
+                  <h2>Foxtail Millet - SiA 3088</h2>
+                  <div class="seed-id-badge">SIA3088</div>
+                </div>
+              </div>
+
+              <div class="slide-body">
+
+
+                <div class="details-text">
+                  <p><strong>Procurement Details:</strong> Sourced directly from the Seed center Nutrihub, IIMR. SiA
+                    3088 is a distinguished short-duration variety, specifically bred for superior drought tolerance and
+                    exceptional seedling vigor, ensuring reliable yields even in water-limited conditions.</p>
+                </div>
+
+                <div class="features-list">
+                  <h4>Key Benefits</h4>
+                  <ul>
+                    <li><strong>Short Duration:</strong> Rapid maturity cycle ideal for efficient crop rotation.</li>
+                    <li><strong>Drought Tolerant:</strong> Thrives in regions with limited rainfall.</li>
+                    <li><strong>High Vigor:</strong> Superior seedling establishment and robust growth.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="seed-slide">
+              <div class="slide-header">
+                <img src="./images/image.png" alt="Foxtail Millets SiA 4056" class="seed-img" />
+                <div class="header-info">
+                  <h2>Foxtail Millet - SiA 4056</h2>
+                  <div class="seed-id-badge">SIA4056</div>
+                </div>
+              </div>
+
+              <div class="slide-body">
+
+
+                <div class="details-text">
+                  <p><strong>Procurement Details:</strong> A premium, high-yielding variety procured from certified
+                    organic farms. SiA 4056 is celebrated for its dense nutritional profile and adaptability to diverse
+                    soil types, making it a powerhouse of health and sustainability.</p>
+                </div>
+
+                <div class="features-list">
+                  <h4>Key Benefits</h4>
+                  <ul>
+                    <li><strong>High Yield Potential:</strong> Optimized for maximum grain production.</li>
+                    <li><strong>Nutrient Dense:</strong> Rich in essential minerals and dietary fiber.</li>
+                    <li><strong>Widely Adaptable:</strong> Performs well across various soil conditions.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-nav">
+            <button class="nav-dot active" aria-label="Go to slide 1"></button>
+            <button class="nav-dot" aria-label="Go to slide 2"></button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="collapsible-section">
+    <button class="collapsible-header" aria-expanded="false" aria-controls="journey-content">
+      <span class="header-text">Crop Journey</span>
+      <span class="chevron">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </span>
+    </button>
+    <div class="collapsible-content">
+      <section class="journey-section">
+
+        <div class="journey-content">
+          <div class="timeline">
+            <!-- Step 1: Ploughing -->
+            <div class="step">
+              <div class="circle">🚜</div>
+              <div class="step-content">
+                <div class="step-title">Ploughing (Tillage/Soil Preparation)</div>
+                <div class="step-date">2025-02-11</div>
+                <div class="step-desc">
+                  The process of loosening and turning the soil to prepare a soft, aerated bed for seeds, ensuring
+                  better root penetration and nutrient absorption.
+                </div>
+                <div class="step-photos">
+                  <div class="photos-label">Documentation Photos</div>
+                  <div class="photos-row">
+                    <img src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/1_2.jpg?v=1764215240"
+                      alt="Ploughing 1" class="photo-slot" />
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Planking_leveling_2_1.jpg?v=1764215325"
+                      alt="Ploughing 2" class="photo-slot" />
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Secondary_tilage_2.jpg?v=1764215394"
+                      alt="Ploughing 3" class="photo-slot" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Sowing -->
+            <div class="step">
+              <div class="circle">🌱</div>
+              <div class="step-content">
+                <div class="step-title">Sowing (Planting the Seeds)</div>
+                <div class="step-date">2025-02-13</div>
+                <div class="step-desc">
+                  The careful planting of seeds into the prepared soil at the right depth and spacing to ensure optimal
+                  germination and healthy crop density.
+                </div>
+                <div class="step-photos">
+                  <div class="photos-label">Documentation Photos</div>
+                  <div class="photos-row">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Seeds_for_sowing_2.jpg?v=1764215506"
+                      alt="Sowing 1" class="photo-slot" />
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Sowing_operation_1_3.jpg?v=1764215506"
+                      alt="Sowing 2" class="photo-slot" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Irrigation -->
+            <div class="step">
+              <div class="circle">💧</div>
+              <div class="step-content">
+                <div class="step-title">Irrigation (Watering)</div>
+                <div class="step-date">2025-03-01</div>
+                <div class="step-desc">
+                  The controlled application of water to crops at critical growth stages to maintain soil moisture and
+                  support vigorous plant development.
+                </div>
+                <div class="step-photos">
+                  <div class="photos-label">Documentation Photos</div>
+                  <div class="photos-row">
+                    <!-- Placeholder images for Irrigation -->
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/1st_irrigation_14_Feb_1.jpg?v=1764215610"
+                      alt="Irrigation 1" class="photo-slot" />
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/2nd_irrigation_1_March.jpg?v=1764215610"
+                      alt="Irrigation 2" class="photo-slot" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Step 4: Harvesting -->
+            <div class="step">
+              <div class="circle">🌾</div>
+              <div class="step-content">
+                <div class="step-title">Harvesting (Gathering the Crop)</div>
+                <div class="step-date">2025-05-16</div>
+                <div class="step-desc">
+                  Careful harvesting at optimal maturity for maximum nutrition.
+                </div>
+                <div class="step-photos">
+                  <div class="photos-label">Documentation Photos</div>
+                  <div class="photos-row">
+                    <img src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Harvest_1_1.jpg?v=1764216057"
+                      alt="Harvesting 1" class="photo-slot" />
+                    <img src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Harvest_2_1.jpg?v=1764216057"
+                      alt="Harvesting 2" class="photo-slot" />
+                    <img src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Harvest_3.jpg?v=1764216057"
+                      alt="Harvesting 3" class="photo-slot" />
+                    <img src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Harvest_4_1.jpg?v=1764216055"
+                      alt="Harvesting 4" class="photo-slot" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 5: Processing -->
+            <div class="step">
+              <div class="circle">⚙️</div>
+              <div class="step-content">
+                <div class="step-title">Processing</div>
+                <div class="step-date">2025-05-17</div>
+                <div class="step-desc">
+                  The post-harvest treatment of the crop, including cleaning, drying, and initial quality testing, to
+                  prepare it for storage or further refinement.
+                </div>
+                <div class="step-photos">
+                  <div class="photos-label">Documentation Photos</div>
+                  <div class="photos-row">
+                    <img src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Drying_1.jpg?v=1753337870"
+                      alt="Processing 1" class="photo-slot" />
+                    <img src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Drying_2.jpg?v=1753337870"
+                      alt="Processing 2" class="photo-slot" />
+                    <img src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Drying_3.jpg?v=1764216240"
+                      alt="Processing 3" class="photo-slot" />
+                    <img src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Drying_4.jpg?v=1753337870"
+                      alt="Processing 4" class="photo-slot" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 6: Storage -->
+            <div class="step">
+              <div class="circle">📦</div>
+              <div class="step-content">
+                <div class="step-title">Storage</div>
+                <div class="step-date">2025-06-13</div>
+                <div class="step-desc">
+                  The preservation of processed grains in controlled environments to protect against pests and moisture,
+                  maintaining freshness and nutritional value.
+                </div>
+                <div class="step-photos">
+                  <div class="photos-label">Documentation Photos</div>
+                  <div class="photos-row">
+                    <!-- Placeholder images for Storage -->
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Tansport_of_crop_1.jpg?v=1764217270"
+                      alt="Storage 1" class="photo-slot" />
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/Tansport_of_crop_2.jpg?v=1764217271"
+                      alt="Storage 2" class="photo-slot" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="quality-assurance">
+            <div class="qa-label">Quality Assurance</div>
+            <div class="qa-desc">
+              Every stage of the crop journey is carefully documented with
+              timestamp verification and photographic evidence. Our farming
+              practices follow organic standards with regular quality checks
+              to ensure the highest nutritional value.
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="collapsible-section">
+    <button class="collapsible-header" aria-expanded="false" aria-controls="shipment-content">
+      <span class="header-text">Shipment & Logistics</span>
+      <span class="chevron">&#9660;</span>
+    </button>
+    <div class="collapsible-content">
+      <section class="shipment-section">
+        <div class="shipment-content-new">
+
+          <div class="supply-chain-timeline">
+
+            <!-- Step 1: Seed Sourcing -->
+            <div class="sc-step">
+              <div class="sc-marker">
+                <div class="sc-icon">🌱</div>
+                <div class="sc-line"></div>
+              </div>
+              <div class="sc-card">
+                <div class="sc-header">
+                  <h4>Seed Sourcing</h4>
+                  <span class="sc-location">Nutrihub, Hyderabad</span>
+                  <span class="sc-date">22-01-2025</span>
+                </div>
+                <p>High-quality seeds sourced directly from Nutrihub.</p>
+              </div>
+            </div>
+
+            <!-- Step 2: Cultivation -->
+            <div class="sc-step">
+              <div class="sc-marker">
+                <div class="sc-icon">🚜</div>
+                <div class="sc-line"></div>
+              </div>
+              <div class="sc-card">
+                <div class="sc-header">
+                  <h4>Cultivation</h4>
+                  <span class="sc-location">Farmer, Srikakulam (AP)</span>
+                  <span class="sc-date">01-03-2025</span>
+                </div>
+                <p>Grown with care by our partner farmers in Andhra Pradesh.</p>
+              </div>
+            </div>
+
+            <!-- Step 3: Processing (Sprouting) -->
+            <div class="sc-step">
+              <div class="sc-marker">
+                <div class="sc-icon">⚙️</div>
+                <div class="sc-line"></div>
+              </div>
+              <div class="sc-card">
+                <div class="sc-header">
+                  <h4>Sprouting & Processing</h4>
+                  <span class="sc-location">Nutrilize Naturals, Hyderabad</span>
+                  <span class="sc-date">13-06-2025</span>
+                </div>
+                <p>Specialized sprouting and processing to enhance nutritional value.</p>
+              </div>
+            </div>
+
+            <!-- Step 4: Final Production -->
+            <div class="sc-step">
+              <div class="sc-marker">
+                <div class="sc-icon">🏭</div>
+              </div>
+              <div class="sc-card">
+                <div class="sc-header">
+                  <h4>Final Production</h4>
+                  <span class="sc-location">Nutrihub, Hyderabad</span>
+                  <span class="sc-date">21-07-2025</span>
+                </div>
+                <p>Crafting the final Cookies and Health Bars.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Products Section -->
+  <div class="products-section">
+    <div class="products-header">
+      <h2 class="products-title">Experience Transparency</h2>
+      <p class="products-instruction">Tap to reveal the source and efficacy of every ingredient</p>
+    </div>
+    <div class="products-container">
+      <div class="products-row">
+        <div class="product-item" data-product="cookies">
+          <a href="cookies.html" class="product-link">
+            <div class="product-image-wrapper">
+              <img src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/cookies_rem.png?v=1764052298"
+                alt="Millets & Oats Breakfast Cookies" class="product-display-image" />
+              <div class="tap-indicator">
+                <span class="tap-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </span>
+                <span class="tap-text">View Source</span>
+              </div>
+            </div>
+          </a>
+          <div class="product-lab-report">
+            <a href="#" class="lab-report-btn" data-lab="cookies" target="_blank">
+              <div class="lab-report-icon-circle">
+                <svg class="lab-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M10 9H9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="lab-report-content">
+                <span class="lab-report-label">Lab Report</span>
+                <span class="lab-report-subtitle">Quality Analysis</span>
+              </div>
+              <div class="lab-report-arrow-wrapper">
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="lab-report-shine"></div>
+            </a>
+          </div>
+        </div>
+        <div class="product-item" data-product="protein">
+          <a href="protein-bar.html" class="product-link">
+            <div class="product-image-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/47a85745-a62e-4caa-98a5-67be65e55840_20251125_125134_0000_1.png?v=1764055367"
+                alt="Health Bar" class="product-display-image" />
+              <div class="tap-indicator">
+                <span class="tap-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </span>
+                <span class="tap-text">View Source</span>
+              </div>
+            </div>
+          </a>
+          <div class="product-lab-report">
+            <a href="#" class="lab-report-btn" data-lab="protein" target="_blank">
+              <div class="lab-report-icon-circle">
+                <svg class="lab-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M10 9H9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="lab-report-content">
+                <span class="lab-report-label">Lab Report</span>
+                <span class="lab-report-subtitle">Quality Analysis</span>
+              </div>
+              <div class="lab-report-arrow-wrapper">
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="lab-report-shine"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="products-row">
+        <div class="product-item single" data-product="porridge">
+          <a href="porridge-mix.html" class="product-link">
+            <div class="product-image-wrapper">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0892/8352/6978/files/porridgemx_beetroot_a484b764-d432-4485-ad34-83801613f6e5.png?v=1764054443"
+                alt="Porridge Mix" class="product-display-image" />
+              <div class="tap-indicator">
+                <span class="tap-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </span>
+                <span class="tap-text">View Source</span>
+              </div>
+            </div>
+          </a>
+          <div class="product-lab-report">
+            <a href="#" class="lab-report-btn" data-lab="porridge" target="_blank">
+              <div class="lab-report-icon-circle">
+                <svg class="lab-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M10 9H9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="lab-report-content">
+                <span class="lab-report-label">Lab Report</span>
+                <span class="lab-report-subtitle">Quality Analysis</span>
+              </div>
+              <div class="lab-report-arrow-wrapper">
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="lab-report-shine"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.product-swiper', {
+      slidesPerView: 1.2,
+      spaceBetween: 24,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        700: {
+          slidesPerView: 2.2,
+        },
+        1100: {
+          slidesPerView: 3,
+        }
+      }
+    });
+  </script>
+  <!-- COA Modal -->
+  <div id="coaModal" class="coa-modal">
+    <div class="coa-modal-content">
+      <span class="coa-close">&times;</span>
+      <p>Certificate of Analysis (COA) is not available for this ingredient yet.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
